@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-19T13:28:17.171093" rpa="false" schemaversion="5">
+<suite id="s1" name="SwagLabs" source="C:\Users\thiru\PycharmProjects\PythonAdvanceProject\RobotFramework\selenium\SwagLabs.robot">
+<test id="s1-t1" name="verify login scenario with valid creadentails" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:28:17.364743" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T13:28:17.364743" elapsed="6.704146"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.068889" elapsed="0.043688"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@id='user-name']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.112577" elapsed="0.032152"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:28:24.144729" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.144729" elapsed="0.105590"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:28:24.250319" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.250319" elapsed="0.079849"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:28:24.331192" level="INFO">Clicking element '//input[@id='login-button']'.</msg>
+<arg>//input[@id='login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.330168" elapsed="0.088794"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='app_logo']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.418962" elapsed="0.010651"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T13:28:24.456464" level="INFO">Element '//div[@class='app_logo']' is displayed.</msg>
+<arg>//div[@class='app_logo']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.429613" elapsed="0.026851"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-19T13:28:34.457055" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-19T13:28:24.456464" elapsed="10.000591"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T13:28:34.457055" elapsed="2.209040"/>
+</kw>
+<status status="PASS" start="2026-02-19T13:28:17.363228" elapsed="19.303664"/>
+</test>
+<status status="PASS" start="2026-02-19T13:28:17.172095" elapsed="19.496009"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="SwagLabs" id="s1" pass="1" fail="0" skip="0">SwagLabs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
